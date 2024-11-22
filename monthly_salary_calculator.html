@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Salary Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Monthly Salary Calculator</h1>
+    
+    <div class="controls">
+      <label for="month">Select Month:</label>
+      <input type="month" id="month">
+    </div>
+    
+    <table id="workdays">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Day Shift (In Time - Out Time)</th>
+          <th>Night Shift (In Time - Out Time)</th>
+          <th>Special Day</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows added dynamically using JS -->
+      </tbody>
+    </table>
+    
+    <button id="calculate">Calculate Salary</button>
+    <button id="download-slip">Download Salary Slip</button>
+    
+    <div id="results">
+      <h2>Summary</h2>
+      <p>Total Basic Salary: <span id="basic-salary"></span></p>
+      <p>Total Overtime Earnings: <span id="ot-salary"></span></p>
+      <p>Attendance Bonus: <span id="bonus"></span></p>
+      <p>Total Salary: <span id="total-salary"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
